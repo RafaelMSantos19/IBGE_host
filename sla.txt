@@ -1,0 +1,93 @@
+<img src="https://servicodados.ibge.gov.br/api/v3/malhas/estados/15?formato=image/svg+xml&qualidade=maxima">
+				<ul>
+					<li> Estado:    <text>para</text> </li>
+					<li> Area Territorial:  <text>test</text> </li>
+					<li> Densidade Demografica: <text>test</text> </li>
+				</ul>
+
+
+                <li>
+					<img src="https://www.ibge.gov.br/modules/mod_quick_facts/css/images/area.png"> 
+					<b>Área Territorial:  </b>  <text>8.510.345,540 km²</text>
+				</li>
+				<li>
+					<img src="https://www.ibge.gov.br/modules/mod_quick_facts/css/images/populacao.png"> 
+					<b>População estimada:  </b>  <text>213.317.639 pessoas</text>
+				</li>
+				<li>
+					<img src="https://www.ibge.gov.br/modules/mod_quick_facts/css/images/densidade.png"> 
+					<b>Densidade demográfica:  </b>  <text>22,43 hab/km² </text>
+				</li>
+
+
+
+RO = 11 ok
+AC = 12 ok
+AM = 13 ok
+RR = 14 ok
+PA = 15 ok
+AP = 16 ok
+TO = 17 ok
+
+
+MA = 21 ok
+PI = 22 ok
+CE = 23 ok
+RN = 24 ok
+PB = 25 ok
+PE = 26 ok
+AL = 27 ok
+SE = 28 ok
+BA = 29 ok
+
+PR = 41 OK
+SC = 42 OK
+RS = 43 OK
+
+
+MS = 50 ok
+MT = 51 ok
+GO = 52 ok
+DF = 53 ok
+
+MG = 31 ok
+ES = 32 ok
+RJ = 33 ok
+SP = 35 ok
+
+
+document.getElementById('AM').addEventListener('click',ativado);
+document.getElementById('PA').addEventListener('click',ativado);
+document.getElementById('AC').addEventListener('click',ativado);
+document.getElementById('MA').addEventListener('click',ativado);
+document.getElementById('PE').addEventListener('click',ativado);
+document.getElementById('MS').addEventListener('click',ativado);
+document.getElementById('MT').addEventListener('click',ativado);
+document.getElementById('MG').addEventListener('click',ativado);
+document.getElementById('ES').addEventListener('click',ativado);
+document.getElementById('RJ').addEventListener('click',ativado);
+document.getElementById('DF').addEventListener('click',ativado);
+document.getElementById('AP').addEventListener('click',ativado);
+document.getElementById('SP').addEventListener('click',ativado);
+document.getElementById('RS').addEventListener('click',ativado);
+document.getElementById('SC').addEventListener('click',ativado);
+document.getElementById('TO').addEventListener('click',ativado);
+document.getElementById('BA').addEventListener('click',ativado);
+document.getElementById('RO').addEventListener('click',ativado);
+document.getElementById('PR').addEventListener('click',ativado);
+document.getElementById('CE').addEventListener('click',ativado);
+document.getElementById('RN').addEventListener('click',ativado);
+document.getElementById('SE').addEventListener('click',ativado);
+document.getElementById('AL').addEventListener('click',ativado);
+document.getElementById('GO').addEventListener('click',ativado);
+document.getElementById('PI').addEventListener('click',ativado);
+document.getElementById('PB').addEventListener('click',ativado);
+document.getElementById('RR').addEventListener('click',ativado);
+
+
+
+
+
+
+
+

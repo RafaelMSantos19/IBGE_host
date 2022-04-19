@@ -1,0 +1,242 @@
+/* Estrutura
+------------------------------------ */
+body {
+	background:url(../img/fundo.png) repeat-x;
+	background-color: #eeeeee;
+	font:15px "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+#select{
+	color: #000000;
+	background-color:#2fdd26;
+	border:solid 1px;
+	border-radius:15px;
+	width:300px;
+	float:right;
+}
+
+#select:hover{
+	color: #000000;
+	background-color: #34ae1e;
+}
+#container {
+	width: 1080px;
+	margin:35px auto;
+}
+
+a:link, a:active, a:visited {
+	color: #af670a;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #227115;
+}
+
+
+#svg-map path { 
+	fill:#43fc05 
+}
+
+#svg-map text { 
+	fill:#fff; 
+	font:12px Arial-BoldMT, sans-serif; 
+	cursor:pointer 
+}
+#svg-map a{ 
+		text-decoration:none 
+}
+#svg-map a:hover { 
+		cursor:pointer; text-decoration:none 
+}
+#svg-map a:hover path{
+		 fill:#fbff05 
+}
+#svg-map .circle {
+		 fill:#66ff00 
+}
+#svg-map a:hover .circle {
+ fill:#e6ff06; cursor:pointer 
+}
+
+#estados {
+	background-color: none;
+}
+
+/* Logo 
+------------------------------------ */
+#logo h1 {
+	float: left;
+}
+
+#logo a {
+	width: 193px;
+	height: 38px;
+	text-indent:  -9999px;
+	display: block;
+	background: url(../img/ibge.png) no-repeat;
+}
+
+
+/* Barra de navegação 
+------------------------------------ */
+header {
+	padding: 15px 0;
+	height: 100px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 20px;
+	float: right;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a:link {
+	display: block;
+	margin-right: 25px;
+	padding-bottom: 3px;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	border-bottom: 1px solid #535858;
+}
+
+/* Principal 
+------------------------------------ */
+#conteudo {
+	width: 710px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+
+h3 {
+	color: #227115;
+	font-size: 1.0em;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+}
+
+h4 {
+	color: #86521a;
+	text-transform: uppercase;
+	padding-bottom:3px;
+	margin-bottom: 0;
+}
+
+/* Rafael Modificações */
+#divBusca{
+	background-color:#cf842d;
+	border:solid 1px;
+	border-radius:15px;
+	width:300px;
+	float:right;
+  }
+  
+  #txtBusca{
+	float:left;
+	color: white;
+	background-color:transparent;
+	padding-left:5px;
+	font-style:italic;
+	font-size:18px;
+	border:none;
+	height:32px;
+	width:260px;
+  }
+
+.filtro_button{
+	display: inline-block;
+	padding-top: 100px;
+}
+
+.filtro_button img{
+	width: 264px;
+	height:138px;
+}
+
+
+
+/* Rodapé
+------------------------------------ */
+footer {
+	clear: both;
+	padding: 20px 0 30px 0;
+	text-align: center;
+	background: url(../img/fundo-rodape.png) no-repeat center top;
+	margin-top: 20px;
+}
+
+footer>p a {
+	padding: 2px 10px;
+}
+
+.mapa{
+	display: inline-flex;
+}
+
+.mapa svg{
+	background-color: rgb(48, 203, 246);
+}
+
+#dados li {
+	list-style-type: none;
+	padding-top: 15px;
+	margin-bottom: 5%;
+	border-top: solid;
+	border-width: 1px;
+	border-color: gray;
+	
+}
+
+
+
+#dados li img{
+	width: 12%;
+	position: relative;
+	
+}
+
+#dados li text{
+	margin-left: 5%;
+}
+
+#card{
+	
+	display: inline-flex;
+	background-color: rgb(70, 181, 89);
+	border-radius: 15px;
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
+}
+
+#card img{
+	width: 30%;
+	padding-left: 10%;
+}
+
+#card ul{
+
+	font-size: 20 px;
+	padding-top: 7%;
+	padding-left: 10%;
+
+}
+
+#card li{
+	list-style-type: none;
+	padding-top: 15px;
+	margin-bottom: 5%;
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: rgb(0, 0, 0);
+}
