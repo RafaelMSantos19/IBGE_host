@@ -69,14 +69,19 @@ a:hover {
 	float: left;
 }
 
+
+
 #logo a {
 	width: 193px;
 	height: 38px;
-	text-indent:  -9999px;
 	display: block;
-	background: url(../img/ibge.png) no-repeat;
+	
 }
-
+#logo a img{
+	width: 200px;
+	position: relative;
+	top: -70px;
+}
 
 /* Barra de navegação 
 ------------------------------------ */
@@ -104,6 +109,15 @@ nav ul li a:link {
 
 nav ul li a:hover {
 	border-bottom: 1px solid #535858;
+}
+
+#barra_amarela{
+	width: 126.3333%;
+	background: yellow;
+	text-indent:  -9999px;
+	position: relative;
+	top: -30px;
+	right: 150px;
 }
 
 /* Principal 
@@ -209,9 +223,8 @@ footer>p a {
 #card{
 	
 	display: inline-flex;
-	background-color: rgb(70, 181, 89);
 	border-radius: 15px;
-	margin-top: 10%;
+	margin-top: 5%;
 	margin-left: 5%;
 	margin-right: 5%;
 	padding-top: 5%;
@@ -220,15 +233,20 @@ footer>p a {
 }
 
 #card img{
+	
 	width: 30%;
-	padding-left: 10%;
+	padding-right: 7%;
+	padding-left: 7%;
 }
 
 #card ul{
-
+	border-radius: 15px;
+	background: rgb(128, 128, 128);
 	font-size: 20 px;
 	padding-top: 7%;
+	padding-bottom: 7%;
 	padding-left: 10%;
+	padding-right: 10%;
 
 }
 
@@ -240,3 +258,54 @@ footer>p a {
 	border-width: 1px;
 	border-color: rgb(0, 0, 0);
 }
+
+.select_1{
+		display: flex;
+}
+
+.select_1 table{
+	margin-right: 5%;
+}
+
+
+
+
+#tabela{
+	background-color: gray;
+	border:solid ;
+	border-width: 1px;
+	margin-top: 5%;
+}
+
+#tabela thead tr {
+	border:solid ;
+	border-width: 1px;
+	background: grey;
+}
+
+#tabela thead tr td{
+	padding-left: 10px;
+}
+
+#tabela tbody tr td div{
+	background: white;
+	
+	display: grid;
+	border:solid ;
+	border-width: 1px;
+	border-color: gray;
+
+}
+
+.scroll{
+	height: 260px;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+.scroll label{
+	padding-right: 70px;
+	padding-left: 10px;
+	
+}
+
