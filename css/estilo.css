@@ -198,6 +198,7 @@ footer>p a {
 	background-color: rgb(48, 203, 246);
 }
 
+
 #dados li {
 	list-style-type: none;
 	padding-top: 15px;
@@ -217,6 +218,28 @@ footer>p a {
 }
 
 #dados li text{
+	margin-left: 5%;
+}
+
+
+
+#dados2 li {
+	list-style-type: none;
+	padding-top: 15px;
+	margin-bottom: 5%;
+	border-top: solid;
+	border-width: 1px;
+	border-color: gray;
+	
+}
+
+#dados2 li img{
+	width: 12%;
+	position: relative;
+	
+}
+
+#dados2 li text{
 	margin-left: 5%;
 }
 

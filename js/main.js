@@ -15,25 +15,28 @@ function escolha(){
 
 
     if(e=='Z'){
-        console.log('O valor A esta pegando!')
+        console.log('O valor Z esta pegando!')
         document.getElementById("card").innerHTML = ' '
         document.getElementById("dados").innerHTML = ' '
     }
     if(e=='A'){
         console.log('O valor A esta pegando!')
         document.getElementById("card").innerHTML = ' '
+        document.getElementById("dados2").innerHTML = ' '
         A002();
         buttao();
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
         document.getElementById("card").innerHTML = ' '
+        document.getElementById("dados2").innerHTML = ' '
         B002();
         buttao();
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
         document.getElementById("card").innerHTML = ' '
+        document.getElementById("dados2").innerHTML = ' '
         C002();
         buttao();
         

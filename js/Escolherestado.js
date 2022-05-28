@@ -1,5 +1,5 @@
 import { B001 } from "./EstimativasdaPopulacao.js";
-import { A001 } from './Censodemográfico.js';
+import { A001,A003 } from './Censodemográfico.js';
 import { C001 } from './AssistenciaMedica.js';
 
 export function buttao(){
@@ -28,7 +28,8 @@ const roraima = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(14);
+        A001(14);A003(1);
+        
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -58,7 +59,7 @@ const acre = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(12);
+        A001(12);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -89,7 +90,7 @@ const para = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(15);
+        A001(15);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -119,7 +120,7 @@ const amazonas = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(13);
+        A001(13);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -148,7 +149,7 @@ const rondonia = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(11);
+        A001(11);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -178,7 +179,7 @@ const amapa = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(16);
+        A001(16);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -211,7 +212,7 @@ const maranhao = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(21);
+        A001(21);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -241,7 +242,7 @@ const piaui = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(22);
+        A001(22);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -271,7 +272,7 @@ const tocantis = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(17);
+        A001(17);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -300,7 +301,7 @@ const ceara = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(23);
+        A001(23);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -329,7 +330,7 @@ const riograndenorte = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(24);
+        A001(24);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -358,7 +359,7 @@ const paraiba = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(25);
+        A001(25);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -387,7 +388,7 @@ const pernanbuco = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(26);
+        A001(26);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -416,7 +417,7 @@ const alagoas = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(27);
+        A001(27);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -445,7 +446,7 @@ const sergipe = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(28);
+        A001(28);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -474,7 +475,7 @@ const bahia = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(29);
+        A001(29);A003(2);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -503,7 +504,7 @@ const parana = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(41);
+        A001(41);A003(4);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -532,7 +533,7 @@ const santacatarina = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(42);
+        A001(42);A003(4);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -561,7 +562,7 @@ const riograndesul = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(43);
+        A001(43);A003(4);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -591,7 +592,7 @@ const matogrossosul = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(50);
+        A001(50);A003(5);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -621,7 +622,7 @@ const matogrosso = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(51);
+        A001(51);A003(5);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -650,7 +651,7 @@ const goiais = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(52);
+        A001(52);A003(5);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -679,7 +680,7 @@ const distritofederal = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(53);
+        A001(53);A003(5);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -708,7 +709,7 @@ const minasgerais = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(31);
+        A001(31);A003(3);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -737,7 +738,7 @@ const espiritosanto = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(32);
+        A001(32);A003(3);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -766,7 +767,7 @@ const riodejaneiro = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(33);
+        A001(33);A003(3);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -795,7 +796,7 @@ const saopaulo = async() =>{
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(35);
+        A001(35);A003(3);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
