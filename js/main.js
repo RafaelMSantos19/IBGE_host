@@ -1,4 +1,4 @@
-import { A002, A004 } from './Censodemográfico.js';
+import { A002, A004, A005 } from './Censodemográfico.js';
 import { B002 } from './EstimativasdaPopulacao.js';
 import { C002 } from './AssistenciaMedica.js';
 import { buttao } from './Escolherestado.js';
@@ -25,6 +25,7 @@ function escolha(){
         document.getElementById("dados2").innerHTML = ' '
         A002();
         A004();
+        A005();
         buttao();
     }
     if(e=='B'){

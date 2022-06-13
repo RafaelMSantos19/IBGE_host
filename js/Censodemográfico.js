@@ -208,12 +208,54 @@ export function A004(){
     }) // fim do foreach
 
 
-
-    
-
-
-
     document.getElementById("Lista_Messo").innerHTML = divDados
+
+
+   
+}
+
+
+export function A005(){
+
+  function acessarAPI(url) {
+    let requisicao = new XMLHttpRequest()
+    requisicao.open("GET", url, false)
+    requisicao.send()
+    return requisicao.responseText
+  } // fim do acessarAPI
+  //function carregarDadosAPI() {
+    let dados = acessarAPI(
+        "https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/616?localidades=N9[all]"
+        
+    )
+  
+    let vagas = JSON.parse(dados)
+    console.log(vagas)
+   
+    let divDados = ""
+    vagas.forEach(element => {
+        
+        divDados += '<table id="tabela">'
+        divDados += '<thead>'
+        divDados += '<tr> <td> Microrregião </td> </tr>' 
+        divDados += '</thead>'
+        divDados += '<tbody> <tr> <td>'
+        divDados += '<div class="scroll"> '
+ 
+      for(var V=0; V<557; V++){
+
+        divDados += '<label> <input type="checkbox" name="variavel">  -'+element.resultados[0].series[V].localidade["nome"]+' </label>'
+
+      }
+        divDados += '</div> </td> </tr> </tbody> </table>'
+        
+        
+        
+        
+    }) // fim do foreach
+
+
+    document.getElementById("Lista_Micro").innerHTML = divDados
 
 
    
