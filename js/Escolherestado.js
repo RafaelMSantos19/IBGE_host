@@ -55,11 +55,13 @@ const acre = async() =>{
 
     let e= document.getElementById('select').value;
     console.log(e);
+
+    var estado= 12;
     
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(12);A003(1);
+        A001(estado);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
@@ -87,10 +89,11 @@ const para = async() =>{
     let e= document.getElementById('select').value;
     console.log(e);
     
+    var estado = 15;
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(15);A003(1);
+        A001(estado);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
