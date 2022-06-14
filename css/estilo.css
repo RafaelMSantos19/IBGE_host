@@ -296,6 +296,13 @@ footer>p a {
 .select_2 table{
 margin-right: 5%;
 }
+.select_3{
+	display: flex;
+}
+
+.select_3 table{
+margin-right: 5%;
+}
 
 
 
