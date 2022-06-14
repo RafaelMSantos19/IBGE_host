@@ -332,3 +332,22 @@ footer>p a {
 	
 }
 
+.Mostra_Messo_Micro{
+	margin-top: 5%;
+	width: 50%;
+}
+
+
+.Mostra_Messo_Micro table, td, th{
+	border: 1px solid;
+}
+
+.Mostra_Messo_Micro table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.Mostra_Messo_Micro th{
+	background-color: grey;
+}
+

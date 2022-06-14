@@ -121,6 +121,14 @@ document.getElementById('RR').addEventListener('click',ativado);
 				</tbody>
 	
 			</table>
+			
+			
+			
+			
+      divDados +='<script> console.log("pego??") document.getElementById("A0'+V+'").addEventListener("change", e=>{ if(e.target.checked){ '
+      divDados +='document.getElementById("A'+V+'").style.display="table-row";'
+      divDados +='}else{ document.getElementById("A'+V+'").style.display="none";'
+      divDados +='} }) </script>'
 
 
 

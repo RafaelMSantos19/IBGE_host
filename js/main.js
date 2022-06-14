@@ -1,7 +1,8 @@
-import { A002, A004, A005 } from './Censodemográfico.js';
+import { A002, A004, A005, } from './Censodemográfico.js';
 import { B002 } from './EstimativasdaPopulacao.js';
 import { C002 } from './AssistenciaMedica.js';
 import { buttao } from './Escolherestado.js';
+import { LISTA_A003 } from './lista01.js';
  
 
 
@@ -25,6 +26,7 @@ function escolha(){
         document.getElementById("dados2").innerHTML = ' '
         A002();
         A004();
+        LISTA_A003();
         A005();
         buttao();
     }
