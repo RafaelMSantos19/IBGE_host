@@ -3,6 +3,7 @@ import { B002 } from './EstimativasdaPopulacao.js';
 import { C002 } from './AssistenciaMedica.js';
 import { buttao } from './Escolherestado.js';
 import { LISTA_A003 } from './lista01.js';
+import { LISTA_A004 } from './lista02.js';
  
 
 
@@ -28,6 +29,7 @@ function escolha(){
         A004();
         LISTA_A003();
         A005();
+        LISTA_A004();
         buttao();
     }
     if(e=='B'){
