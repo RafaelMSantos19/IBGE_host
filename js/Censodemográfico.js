@@ -174,8 +174,7 @@ export function A004(){
     let requisicao = new XMLHttpRequest()
     requisicao.open("GET", url, false)
     requisicao.send()
-    return requisicao.responseText
-  } // fim do acessarAPI
+    return requisicao.responseText} // fim do acessarAPI
   //function carregarDadosAPI() {
     let dados = acessarAPI(
         "https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/615?localidades=N8[all]"
@@ -201,20 +200,46 @@ export function A004(){
 
       }
         divDados += '</div> </td> </tr> </tbody> </table>'
-        divDados +='<div class="Mostra_Messo_Micro"> <table> '
-        divDados +='<tr> <th>Nome</th>  <th>Km²</th> <th>Hab/Km²</th> <th>Ano do dado</th> </tr>'
+        divDados +='<div class="Mostra_Messo_Micro"> <table><thead> '
+        divDados +='<tr> <th>Nome</th>  <th>Km²</th> <th>Hab/Km²</th> <th>Ano do dado</th> </tr> </thead>'
+        divDados +='<tbody id="Tabela_Messo">  </tbody></table>'
 
 
         
         
     }) // fim do foreach
-    for(var V=0; V<137; V++){
+
+    
+
+
+    
+    
+
+    document.getElementById("Lista_Messo").innerHTML = divDados
+
+
+   
+}
+
+export function A004erro(){
+
+  function acessarAPI(url) {
+    let requisicao = new XMLHttpRequest()
+    requisicao.open("GET", url, false)
+    requisicao.send()
+    return requisicao.responseText} 
+
+  let dados;
+  
+  let vagas;
+
+  let divDados = ""
 
     dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/615?localidades=N8[all]")
 
     vagas = JSON.parse(dados)
     
-
+   
     vagas.forEach(element => {
 
       divDados +='<tr id="A'+V+'"> <td>'+element.resultados[0].series[V].localidade["nome"]+'</td>'
@@ -235,16 +260,11 @@ export function A004(){
       
     })
      
-    }//for end
-
-
     
-    
+
 
     document.getElementById("Lista_Messo").innerHTML = divDados
 
-
-   
 }
 
 
