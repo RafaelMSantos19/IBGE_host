@@ -221,51 +221,7 @@ export function A004(){
    
 }
 
-export function A004erro(){
 
-  function acessarAPI(url) {
-    let requisicao = new XMLHttpRequest()
-    requisicao.open("GET", url, false)
-    requisicao.send()
-    return requisicao.responseText} 
-
-  let dados;
-  
-  let vagas;
-
-  let divDados = ""
-
-    dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/615?localidades=N8[all]")
-
-    vagas = JSON.parse(dados)
-    
-   
-    vagas.forEach(element => {
-
-      divDados +='<tr id="A'+V+'"> <td>'+element.resultados[0].series[V].localidade["nome"]+'</td>'
-      divDados +='<td>'+element.resultados[0].series[V].serie["2010"]+'</td>'
-    })
-
-    dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/616?localidades=N8[all]")
-
-    vagas = JSON.parse(dados)
-    
-
-    vagas.forEach(element => {
-
-      divDados +='<td>'+element.resultados[0].series[V].serie["2010"]+'</td> '
-      divDados +='<td>2010</td> </tr>'
-
-      divDados +='<style> #A'+V+'{ display: none; } </style> '
-      
-    })
-     
-    
-
-
-    document.getElementById("Lista_Messo").innerHTML = divDados
-
-}
 
 
 export function A005(){
@@ -303,38 +259,10 @@ export function A005(){
         divDados += '</div> </td> </tr> </tbody> </table>'
         divDados +='<div class="Mostra_Messo_Micro"> <table> '
         divDados +='<tr> <th>Nome</th>  <th>Km²</th> <th>Hab/Km²</th> <th>Ano do dado</th> </tr>'
+        divDados +='<tbody id="Tabela_Micro">  </tbody></table>'
            
         
     }) // fim do foreach
-
-    for(var V=0; V<558; V++){
-
-      dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/615?localidades=N9[all]")
-  
-      vagas = JSON.parse(dados)
-      
-  
-      vagas.forEach(element => {
-  
-        divDados +='<tr id="B'+V+'"> <td>'+element.resultados[0].series[V].localidade["nome"]+'</td>'
-        divDados +='<td>'+element.resultados[0].series[V].serie["2010"]+'</td>'
-      })
-  
-      dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/616?localidades=N9[all]")
-  
-      vagas = JSON.parse(dados)
-      
-  
-      vagas.forEach(element => {
-  
-        divDados +='<td>'+element.resultados[0].series[V].serie["2010"]+'</td> '
-        divDados +='<td>2010</td> </tr>'
-  
-        divDados +='<style> #B'+V+'{ display: none; } </style> '
-        
-      })
-       
-      }//
 
 
     document.getElementById("Lista_Micro").innerHTML = divDados
@@ -370,7 +298,7 @@ export function A006(){
         divDados += '<tbody> <tr> <td>'
         divDados += '<div class="scroll"> '
 
-        for(var V=0; V<5565; V++){
+        for(var V=0; V<50; V++){
         
           divDados += '<label> <input type="checkbox" id="C0'+V+'">  -'+element.resultados[0].series[V].localidade["nome"]+' </label>'
   
@@ -378,37 +306,11 @@ export function A006(){
           divDados += '</div> </td> </tr> </tbody> </table>'
           divDados +='<div class="Mostra_Messo_Micro"> <table> '
           divDados +='<tr> <th>Nome</th>  <th>Km²</th> <th>Hab/Km²</th> <th>Ano do dado</th> </tr>'
+          divDados +='<tbody id="Tabela_Municipio">  </tbody></table>'
              
           
       }) 
-      for(var V=0; V<5565; V++){
-
-        dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/615?localidades=N6[all]")
-    
-        vagas = JSON.parse(dados)
-        
-    
-        vagas.forEach(element => {
-    
-          divDados +='<tr id="C'+V+'"> <td>'+element.resultados[0].series[V].localidade["nome"]+'</td>'
-          divDados +='<td>'+element.resultados[0].series[V].serie["2010"]+'</td>'
-        })
-    
-        dados = acessarAPI("https://servicodados.ibge.gov.br/api/v3/agregados/1301/periodos/2010/variaveis/616?localidades=N6[all]")
-    
-        vagas = JSON.parse(dados)
-        
-    
-        vagas.forEach(element => {
-    
-          divDados +='<td>'+element.resultados[0].series[V].serie["2010"]+'</td> '
-          divDados +='<td>2010</td> </tr>'
-    
-          divDados +='<style> #C'+V+'{ display: none; } </style> '
-          
-        })
-         
-        }//
+      
 
 
   document.getElementById("Lista_Municipio").innerHTML = divDados;  

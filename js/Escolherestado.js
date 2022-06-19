@@ -33,7 +33,7 @@ const roraima = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(14);
+        B001(14); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -56,16 +56,16 @@ const acre = async() =>{
     let e= document.getElementById('select').value;
     console.log(e);
 
-    var estado= 12;
+    
     
 
     if(e=='A'){
         console.log('O valor A esta pegando!')
-        A001(estado);A003(1);
+        A001(12);A003(1);
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(12);
+        B001(12); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -97,7 +97,7 @@ const para = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(15);
+        B001(15); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -127,7 +127,7 @@ const amazonas = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(13);
+        B001(13); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -156,7 +156,7 @@ const rondonia = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(11);
+        B001(11); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -186,7 +186,7 @@ const amapa = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(16);
+        B001(16); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -219,7 +219,7 @@ const maranhao = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(21);
+        B001(21); B003(2);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')
@@ -279,7 +279,7 @@ const tocantis = async() =>{
     }
     if(e=='B'){
         console.log('O valor B esta pegando!')
-        B001(17);
+        B001(17); B003(1);;
     }
     if(e=='C'){
         console.log('O valor C esta pegando!')

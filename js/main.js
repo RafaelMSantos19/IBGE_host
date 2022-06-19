@@ -28,10 +28,10 @@ function escolha(){
         document.getElementById("dados2").innerHTML = ' '
         A002();
         A004();
-       LISTA_A003();
-       // A005();
-       // LISTA_A004();
-       // A006();
+        LISTA_A003();
+        A005();
+        LISTA_A004();
+        //A006();
         //LISTA_A005();
         buttao();
     }
