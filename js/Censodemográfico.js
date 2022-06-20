@@ -298,9 +298,9 @@ export function A006(){
         divDados += '<tbody> <tr> <td>'
         divDados += '<div class="scroll"> '
 
-        for(var V=0; V<50; V++){
+        for(var V=0; V<5565; V++){
         
-          divDados += '<label> <input type="checkbox" id="C0'+V+'">  -'+element.resultados[0].series[V].localidade["nome"]+' </label>'
+          divDados += '<label> <input type="checkbox" id="E0'+V+'">  -'+element.resultados[0].series[V].localidade["nome"]+' </label>'
   
         }
           divDados += '</div> </td> </tr> </tbody> </table>'

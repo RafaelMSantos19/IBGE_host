@@ -40,6 +40,11 @@ AL = 27 ok
 SE = 28 ok
 BA = 29 ok
 
+MG = 31 ok
+ES = 32 ok
+RJ = 33 ok
+SP = 35 ok
+
 PR = 41 OK
 SC = 42 OK
 RS = 43 OK
@@ -50,10 +55,7 @@ MT = 51 ok
 GO = 52 ok
 DF = 53 ok
 
-MG = 31 ok
-ES = 32 ok
-RJ = 33 ok
-SP = 35 ok
+
 
 
 document.getElementById('AM').addEventListener('click',ativado);
