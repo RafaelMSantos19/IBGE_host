@@ -1,11 +1,12 @@
 import { A002, A004, A005, A006, } from './Censodemográfico.js';
-import { B002, B006 } from './EstimativasdaPopulacao.js';
-import { C002 } from './AssistenciaMedica.js';
+import { B002, B004, B006 } from './EstimativasdaPopulacao.js';
+import { C002, C004 } from './AssistenciaMedica.js';
 import { buttao } from './Escolherestado.js';
 import { LISTA_A003 } from './lista01.js';
 import { LISTA_A004 } from './lista02.js';
 import { LISTA_A005 } from './lista03.js';
 import { LISTA_B005 } from './lista04.js';
+import { limpando } from './limpa.js';
  
 
 
@@ -22,11 +23,14 @@ function escolha(){
         console.log('O valor Z esta pegando!')
         document.getElementById("card").innerHTML = ' '
         document.getElementById("dados").innerHTML = ' '
+        limpando();
+
     }
     if(e=='A'){
         console.log('O valor A esta pegando!')
         document.getElementById("card").innerHTML = ' '
         document.getElementById("dados2").innerHTML = ' '
+        limpando();
         A002();
         A004();
         LISTA_A003();
@@ -40,7 +44,9 @@ function escolha(){
         console.log('O valor B esta pegando!')
         document.getElementById("card").innerHTML = ' '
         document.getElementById("dados2").innerHTML = ' '
+        limpando();
         B002();
+        B004();
         B006();
         LISTA_B005();
         buttao();
@@ -49,7 +55,9 @@ function escolha(){
         console.log('O valor C esta pegando!')
         document.getElementById("card").innerHTML = ' '
         document.getElementById("dados2").innerHTML = ' '
+        limpando();
         C002();
+        C004();
         buttao();
         
     }

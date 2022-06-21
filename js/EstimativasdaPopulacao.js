@@ -107,6 +107,20 @@ export function B003(estado) {
   
 
 }
+export function B004(){
+
+
+  
+  
+
+  let divDados = '<h1>Sem dados de Messoregião e Microregião </h1>'
+
+
+     
+
+     document.getElementById("Lista_Messo").innerHTML = divDados;
+
+}
 
 
 export function B006(){
